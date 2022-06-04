@@ -2,7 +2,49 @@
 nlp course project winter 2021/2022
 Question Answering Domain-Generalization With Domain Adversarial Training
 
-In order to reproduce the experiment you should run main.py with the model name
+## Data Preparation
+
+### Download the original data
+
+- Download the data by running shell file.
+- Then run the code. Preprocessed train data will be created before training (It will takes quite a long time)
+
+```bash
+$ cd data
+$ ./download_data.sh
+```
+
+### (Optional) Download the pickled data (for fast data loading)
+
+- Download the pickled data from this [link](https://drive.google.com/open?id=1-IHdLL4oLOI_Ur8ej-KUZ4kVGGuSKcJ2).
+
+- Unzip the zipfile on the root directory.
+
+```bash
+.
+├── ...
+├── pickled_data_bert-base-uncased_False
+│   ├── HotpotQA.pkl
+│   ├── NaturalQuestions.pkl
+│   ├── NewsQA.pkl
+│   ├── SQuAD.pkl
+│   ├── SearchQA.pkl
+│   └── TriviaQA.pkl
+└── ...
+
+```
+
+## Requirements
+
+Please install the following library requirements specified in the **requirements.txt** first.
+
+```bash
+torch==1.1.0
+pytorch-pretrained-bert>=0.6.2
+json-lines>=0.5.0
+```
+
+## Model Training & Validation
 To run our model BertQA with domain-adversarial :
 python main.py --model_name bert_da
 
