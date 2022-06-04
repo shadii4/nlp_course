@@ -45,13 +45,14 @@ json-lines>=0.5.0
 ```
 
 ## Model Training & Validation
-To run our model BertQA with domain-adversarial :
+To train the models run the script from main.py
+To run the BertQA model with domain-adversarial :
 python main.py --model_name bert_da
 
-To run BertQA finetuned on all source domains :
+To run the BertQA model finetuned on all source domains :
 python main.py --model_name bert_all
 
-To run BertQA finetuned on squad :
+To run the BertQA model finetuned on squad :
 python main.py --model_name bert_squad
 
 
