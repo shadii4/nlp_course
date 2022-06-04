@@ -1,3 +1,14 @@
+'''
+part of the code was used from
+@inproceedings{lee-etal-2019-domain,
+    title={Domain-agnostic Question-Answering with Adversarial Training},
+    author={Seanie Lee and Donggyu Kim and Jangwon Park},
+    booktitle={Proceedings of the 2nd Workshop on Machine Reading for Question Answering},
+    publisher={Association for Computational Linguistics},
+    year={2019},
+    url={https://www.aclweb.org/anthology/D19-5826},
+}
+''''
 import os
 import pickle
 from iterator import read_squad_examples, convert_examples_to_features
