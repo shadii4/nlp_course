@@ -36,8 +36,6 @@ $ ./download_data.sh
 
 ## Requirements
 
-Please install the following library requirements specified in the **requirements.txt** first.
-
 ```bash
 torch==1.1.0
 pytorch-pretrained-bert>=0.6.2
